@@ -5,7 +5,7 @@ from lxml import etree
 import lxml.html
 
 # table = PrettyTable()
-# table.add_column("Name", list())
+# table.add_column("Name", list())  
 # table.add_column("Type", list())
 # print(table)
 
