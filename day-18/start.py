@@ -54,5 +54,4 @@ for coners in range(3,12):
         timmy.right(360/coners)
 
 
-screen = Screen()
-screen.exitonclick()
+
