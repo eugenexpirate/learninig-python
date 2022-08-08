@@ -3,7 +3,7 @@ import requests
 import csv
 
 
-quiz_url = "https://www.signupgenius.com/groups/true-or-false-questions.cfm"
+quiz_url = "https://opentdb.com/browse.php?page="
 
 api = requests.get(quiz_url)
 soup = BeautifulSoup(api.text, 'lxml')
