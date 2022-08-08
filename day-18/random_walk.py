@@ -22,7 +22,7 @@ class RandomWalk:
     def _make_step(self):
         self.change_color()
         angle_orient = random.choice([0, 90, 180, 270])
-        self._turtle.left(angle_orient)
+        self._turtle.setheading(angle_orient)
         self._turtle.forward(self._step_len)
         
 
@@ -32,7 +32,7 @@ class RandomWalk:
 
 
 
-walker = RandomWalk(Turtle(), 30, 1000)
+walker = RandomWalk(Turtle(), 30, 200)
 walker.run()
 
 screen = Screen()
