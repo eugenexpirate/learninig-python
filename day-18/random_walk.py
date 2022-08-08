@@ -1,5 +1,6 @@
 import random
 from turtle import Screen, Turtle
+import turtle
 
 
 
@@ -14,9 +15,9 @@ class RandomWalk:
         self._turtle.speed(0)
     
     def change_color(self):
-        R = random.random()
-        B = random.random()
-        G = random.random()
+        R = random.randint(0,255)
+        B = random.randint(0,255)
+        G = random.randint(0,255)
         self._turtle.color(R, G, B)
 
     def _make_step(self):
@@ -31,7 +32,7 @@ class RandomWalk:
             self._make_step()
 
 
-
+turtle.colormode(255)
 walker = RandomWalk(Turtle(), 30, 200)
 walker.run()
 
