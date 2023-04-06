@@ -246,7 +246,6 @@ class SnakeGame:
         # self.status = GameStatus.RUN
         self.Run()
 
-
 game = SnakeGame()
 game.Start()
 
